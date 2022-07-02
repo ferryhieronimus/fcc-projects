@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <form action="" id="survey-form">
+            <header>
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform!</p>
+            </header>
+            <div class="text-input">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div class="text-input">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="text-input">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="13" max="130" placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" name="role" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h2>Would you recommend freeCodeCamp to a friend?</h2>
+                <div class="selector">
+                    <input type="radio" name="radioButton" id="" value="radioButton" class="inline">
+                    <label for="radioButton" class="inline">Definitely</label>
+                </div>
+                <div class="selector">
+                    <input type="radio" name="radioButton" id="" value="radioButton" class="inline">
+                    <label for="radioButton" class="inline">Maybe</label>
+                </div>
+                <div class="selector">
+                    <input type="radio" name="radioButton" id="" value="radioButton" class="inline">
+                    <label for="radioButton" class="inline">Not sure</label>
+                </div>
+            </div>
+            <div>
+                <h2>What would you like to see improved? (Check all that apply)</h2>
+                <div class="selector">
+                    <input type="checkbox" name="" id="fep" value="checkBox" class="inline">
+                    <label for="fep" class="inline">Front-end Projects</label>
+                </div>
+                <div class="selector">
+                    <input type="checkbox" name="" id="bep" value="checkBox" class="inline">
+                    <label for="bep" class="inline">Back-end Projects</label>
+                </div>
+                <div class="selector">
+                    <input type="checkbox" name="" id="dv" value="checkBox" class="inline">
+                    <label for="dv" class="inline">Data Visualization</label>
+                </div>
+            </div>
+            <div>
+                <h2>Any comments or suggestions?</h2>
+                <textarea name="" id="textbox" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
